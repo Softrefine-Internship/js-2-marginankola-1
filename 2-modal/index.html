@@ -4,12 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      /* write CSS here */
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   </head>
-  <body></body>
-  <script>
-    // write javascript here
-  </script>
+  <body>
+    <div class="account">
+      <input type="button" class="account--btn" value="Deactivate account" id="openModal" />
+    </div>
+    <div class="deactivate--account">
+      <div class="content">
+
+        <div class="icon"><i class="bi bi-exclamation-triangle caution"></i></div>
+        <div class="content--main">
+          <p class="title">Deactivate account</p>
+          <p class="subtitle">Are you sure you want to deactivate your account? All of your data will be permanently removed from our servers forever. This action cannot be undone.</p>
+        </div>
+        <div class="close"><i class="bi bi-x-lg close--icon"></i></div>
+      </div>
+      <div class="buttons">
+        <input type="button" class="btn cancel"  value="Cancel" />
+        <input type="button" class="btn deactivate" value="Deactivate" />
+
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>

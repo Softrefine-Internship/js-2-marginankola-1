@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #333;
+  position: relative;
+ 
+  height: 100vh;
+}
+
+.account--btn {
+  width: 250px;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  background-color: #e74242;
+  border-radius: 4px;
+  color: #fff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  /* display: none; */
+}
+
+.deactivate--account {
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  margin-top: 6px;
+}
+
+
+.content--main {
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #f3d3d3;
+}
+
+.caution
+{
+  font-size: 22px;
+  color: #df5151;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #777;
+}
+.close {
+  width: 18px;
+  height: 18px;
+  margin-left: 22px;
+  cursor: pointer;
+}
+.close--icon{
+  font-size: 20px;
+  color: #999;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap: 10px;
+  
+}
+
+.btn{
+  font-weight: 700;
+  padding: 5px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+.cancel {
+  background-color: #fff;
+}
+
+.deactivate{
+  background-color: #da3636;
+  color: #fff;
+}

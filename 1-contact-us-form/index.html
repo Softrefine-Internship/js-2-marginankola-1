@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      /* write CSS here */
-    </style>
-  </head>
-  <body></body>
-  <script>
-    // write javascript here
-  </script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section class="contact--main">
+    
+    <header class="contact--header">
+      <p class="contact--title head">Constact sales</p>
+      <p class="contact--subtitle head">Aute manga irure deserunt veniam aliqua magna enim voluptate.</p>
+    </header>
+    
+    <form class="contact--form" id="contactForm" onsubmit="return validateForm()">
+      <div class="inline--input">
+        <div class="inline--both">
+          <label class="for--label">First name</label>
+          <input type="text" class="contact--input" id="fname" />
+          <div class="error--message" id="fname--error"></div>
+        </div>
+        <div class="inline--both">
+          <label class="for--label">Last name</label>
+          <input type="text" class="contact--input" id="lname" />
+          <div class="error--message" id="lname--error"></div>
+        </div>
+      </div>
+
+      <div class="elements">
+        <label class="for--label">Company</label>
+        <input type="text" class="contact--input" id="company" />
+        <div class="error--message" id="company--error" ></div>
+
+        <label class="for--label">Email</label>
+        <input type="email" class="contact--input" id="email"/>
+        <div class="error--message" id="email--error"></div>
+
+        <label class="for--label">Phone number</label>
+        <div class="inline--input phone">
+          <select class="contact--input select--input" id="country">
+            <option>US</option>
+            <option>IN</option>
+            <option>UK</option>
+          </select>
+          <input type="tel" class="contact--input num" id="phone" pattern="[0-9]+"/>
+        </div>
+        <div class="error--message" id="phone--error"></div>
+
+        <label class="for--label">Message</label>
+        <textarea class="contact--input contact--message" rows="5" id="message"></textarea>
+        <div class="error--message" id="message--error"></div>
+
+        <div class="inline--input policy">
+          <label class="toggle-switch">
+            <input type="checkbox" id="policyid" />
+            <span class="slider"></span>
+          </label>
+          <span class="span--text policyterm">By selecting this, you agree to our <a href="#">Privacy policy.</a></span>
+          
+        </div>
+        <div class="error--message" id="policy--error"></div>
+        <button class="btn" type="submit">Let's talk</button>
+      </div>
+
+    </form>
+  </section>
+</body>
+<script src="script.js"></script>
+
 </html>

@@ -4,12 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      /* write CSS here */
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> 
   </head>
-  <body></body>
-  <script>
-    // write javascript here
-  </script>
+  <body>
+    <div class="accordian">
+      <div class="accordian--item">
+        <div class="head">
+        <p class="accordian--header" >Accordian Item #1</p>
+        <i class="bi bi-chevron-down icon down"></i>
+        <i class="bi bi-chevron-up icon up"></i>
+        </div>
+        <div class="accordian--content">
+          <b>This is the first item's accordion body</b>. It is shown by default, until
+          the collapse plugin adds the appropriate classes that we use to style
+          each element. These classes control the overall appearance, as well as
+          the showing and hiding via CSS transitions. You can modify any of this
+          with custom CSS or overriding our default variables. It's also worth
+          noting that just about any HTML can go within the <code>.accordion-body</code>,
+          though the transition does limit overflow.
+        </div>
+      </div>
+      <div class="accordian--item">
+        <div class="head">
+        <p class="accordian--header" >Accordian Item #2</p>
+        <i class="bi bi-chevron-down icon down"></i>
+        <i class="bi bi-chevron-up icon up"></i>
+        </div>
+        <div class="accordian--content">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas consequatur dolorem deleniti, pariatur aliquam sunt soluta culpa numquam nostrum dolor ipsum dolore sed assumenda reprehenderit facilis repellat veniam vel cumque.
+        </div>
+      </div>
+      <div class="accordian--item">
+        <div class="head">
+        <p class="accordian--header">Accordian Item #3</p>
+        <i class="bi bi-chevron-down icon down"></i>
+        <i class="bi bi-chevron-up icon up"></i>
+        </div>
+        <div class="accordian--content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nostrum aliquid obcaecati cupiditate minima eveniet nam impedit expedita blanditiis aspernatur, eius eligendi dolorum vel, voluptatum architecto aperiam? Libero, atque fugit.
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>

@@ -1,0 +1,41 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+body{
+    height: 100vh;
+    position: relative;
+}
+
+.tabs{
+    position: relative;
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-bottom: 1px solid gainsboro;
+}
+.tab{
+    color: #777;
+    padding: 0px 20px 12px 20px;
+    cursor: pointer;
+    user-select: none;    
+}
+
+.tab.active{
+    color: rgb(28, 28, 235);
+    border-bottom: 2px solid #007bff;
+}
+
+
+.main--content{
+    margin: 40px;
+}
+
+.content{
+    display: none;
+}

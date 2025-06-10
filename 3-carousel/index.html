@@ -4,12 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      /* write CSS here */
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   </head>
-  <body></body>
-  <script>
-    // write javascript here
-  </script>
+  <body>
+    <div class="carousel">
+      <div class="carousel--container">
+        <img class="carousel--item img1" src="img1.jpg" placeholder="image"></img>
+        <img class="carousel--item img2" src="img2.jpg" placeholder="image"></img>
+        <img class="carousel--item img3" src="img3.jpg" placeholder="image"></img>
+        <img class="carousel--item img4" src="img4.jpg" placeholder="image"></img>
+        <img class="carousel--item img5" src="img5.jpg" placeholder="image"></img>
+      </div>
+      
+      <button class="carousel--button left"><i class="bi bi-chevron-left btn"></i></button>
+      <button class="carousel--button right"><i class="bi bi-chevron-right btn"></i></button>
+      
+      <div class="carousel--indicators">
+        <span class="carousel--indicator active dot1"></span>
+        <span class="carousel--indicator dot2"></span>
+        <span class="carousel--indicator dot3"></span>
+        <span class="carousel--indicator dot4"></span>
+        <span class="carousel--indicator dot5"></span>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>
